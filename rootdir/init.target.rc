@@ -77,7 +77,7 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service qfp-daemon /system/bin/qfp-daemon
+service vendor.qfp-daemon /vendor/bin/qfp-daemon
    class late_start
    user system
    group system drmrpc
